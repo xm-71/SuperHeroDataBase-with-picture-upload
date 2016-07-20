@@ -14,8 +14,12 @@ var app = angular.module('superheroApp', ['addSuperheroCtrl', 'galleryCtrl','det
             templateUrl: 'partials/detail.html',
             controller: 'detailController'
         })
+        .when('/login', {
+            templateUrl: 'partials/login.html',
+            controller: 'AuthController'
+        })
         //Redirect to addSuperhero in all the other cases.
-        .otherwise({redirectTo:'/addSuperhero'});
+        .otherwise({redirectTo:'/login'});
         //Add the API key to use filestack service
         filepickerProvider.setKey('AynkfxksOQNSa83fviAQKz');
 });

@@ -49,3 +49,4 @@ Temporary Items
 server.js
 public/bower_components/
 node_modules/
+public/firebaseconfig.js

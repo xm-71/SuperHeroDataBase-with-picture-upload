@@ -2,48 +2,59 @@
 <html ng-app="superheroApp">
 <head>
     <meta charset="utf-8">
-    <title>Superheroes DataBase</title>
+    <title>RMO</title>
     <meta name="description" content="Superhero database">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 
-    <!-- JS libraries -->
 
-    <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/angular-route/angular-route.js"></script>
-    <script src="./bower_components/filepicker-js/filepicker.js"></script>
-    <script src="./bower_components/angular-filepicker/dist/angular_filepicker.js"></script>
-
-    <!-- Angular files -->
-    <script src="./app.js"></script>
-
-    <script src="./controllers/addSuperheroController.js"></script>
-    <!-- Here is the addSuperheroController.js -->
-    <script src="./controllers/galleryController.js"></script>
-    <!-- Here is the galleryController.js -->
-    <script src="./controllers/detailController.js"></script>
 
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-inverse">
+
+    <nav class="navbar" style="background-color: #97DFB5;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Superhero DataBase</a>
+                <a class="navbar-brand" href="#">Rate My OutFit</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li role="presentation"><a href="/#/addSuperhero">Add Superhero</a></li>
+                <li role="presentation"><a href="/#/login">login</a></li>
+                <li role="presentation"><a href="/#/addSuperhero">Add Clothing</a></li>
                 <li role="presentation"><a href="/#/gallery">Gallery</a></li>
               </ul>
             </div>
         </div>
     </nav>
-    <!-- Here is where the partials will be displayed -->
-    <div ng-view></div>
-</div>
+
+
+<div ng-view></div>
+
+<!-- JS libraries -->
+
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./bower_components/angular-route/angular-route.js"></script>
+<script src="./bower_components/filepicker-js/filepicker.js"></script>
+<script src="./bower_components/angular-filepicker/dist/angular_filepicker.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.0.4/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.0.1/angularfire.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"></script>
+
+
+<!-- Angular files -->
+<script src="./app.js"></script>
+
+<script src="./controllers/addSuperheroController.js"></script>
+<!-- Here is the addSuperheroController.js -->
+<script src="./controllers/galleryController.js"></script>
+<!-- Here is the galleryController.js -->
+<script src="./controllers/detailController.js"></script>
+<!-- Here is the loginController.js -->
+<script src="./controllers/loginController.js"></script>
+<!-- Firebase app config -->
+  <script src="app/firebaseConfig.js"></script>
 </body>
 </html>
