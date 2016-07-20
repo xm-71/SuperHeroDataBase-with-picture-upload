@@ -2,6 +2,7 @@
 
 A basic Mean stack app that allows user to upload pictures with filestack
 
+
 based on a project from scotch.io
 
 ## Technical Overview
@@ -13,10 +14,17 @@ based on a project from scotch.io
 * Express
 * Mongoose
 * filepicker
+* firebase
+
+## In development
+* user login
+* user will be able to comment on other uploads
+* like an outfit
+
 
 ## Getting Started
 
-SuperHeroDatabase uses NPM to manage development dependecies
+RMO uses NPM to manage development dependecies
 
 Install node if necessary
 
