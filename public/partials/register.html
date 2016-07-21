@@ -1,36 +1,37 @@
-<div class="medium-6 medium-centered large-4 large-centered columns">
+<div class="col-md-8 col-md-offset-2">
+        <div class="panel-heading">
+            <h2 class="panel-title text-center">
+                <span class="glyphicon glyphicon-user"></span>Sign Up!
+            </h2>
+            <div class="panel-body" ng-show="vm.error" ng-bind="vm.error"></div>
 
-    <form name="authForm" ng-submit="authForm.$valid && vm.register(vm.user)" novalidate>
-      <div class="column log-in-form">
-        <h4 class="text-center">Register</h4>
-
-        <!-- Server Authentication Errors -->
-        <div class="callout small alert" ng-show="vm.error" ng-bind="vm.error"></div>
-
-        <label>Email
-          <input ng-model="vm.user.email" type="email" name="email" placeholder="somebody@example.com" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" autofocus required>
-        </label>
-
-        <!-- Email errors -->
+            <form name="authForm" ng-submit="authForm.$valid && vm.login(vm.user)" novalidate>
+                <div class="form-group text-center">
+                    <label class="text-center">Email
+                        <input class="form-control" ng-model="vm.user.email" type="email" name="email" placeholder="somebody@example.com" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" autofocus required>
+                    </label>
+                </div>
+                <!-- Email errors
         <div class="callout small alert" ng-show="authForm.$submitted && authForm.email.$error.required">
           You need an email address.
         </div>
         <div class="callout small alert" ng-show="authForm.$submitted && authForm.email.$error.email">
           Invalid email
-        </div>
-
-        <label>Password
-          <input ng-model="vm.user.password" type="password" name="password" placeholder="Password" required>
-        </label>
-
-        <!-- Password errors -->
+        </div>-->
+                <div class="form-group text-center">
+                    <label class="text-center">Password
+                        <input class="form-control" ng-model="vm.user.password" type="password" name="password" placeholder="Password" required>
+                    </label>
+                </div>
+                <!-- Password errors
         <div class="callout small alert" ng-show="authForm.$submitted && authForm.password.$error.required">
           Please enter password
+        </div>-->
+                <div class="form-group row text-center">
+                    <p>
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </p>
+                </div>
+            </form>
         </div>
-
-
-        <p><button type="submit" class="button expanded">Register</button></p>
-      </div>
-    </form>
-
-  </div>
+    </div>
